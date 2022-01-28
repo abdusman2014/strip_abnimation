@@ -318,7 +318,7 @@ class _ScreenState extends State<Screen> {
               onPressed: () {
                 setState(() {
                   bottomColor = Colors.blue;
-                  height = 0;
+                //  height = 0;
                 });
               },
             ),

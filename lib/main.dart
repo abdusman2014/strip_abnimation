@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:live_gradient/gradient.dart';
 import 'package:live_gradient/scree.dart';
 import 'package:live_gradient/test.dart';
 import 'package:live_gradient/wave.dart';
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    bool runTest = true;
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Wave(),//const Screen(),
+      home: (runTest) ? const TransformTest(): const Screen(),//const Screen(),
     );
   }
 }
